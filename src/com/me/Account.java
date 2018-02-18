@@ -24,6 +24,25 @@ public class Account {
     }
 
     //Step 5 create getter methods for this. fields
+    //use Code>Generate>Getter, etc. in Menu above
 
+    public String getAccountNumber() {
+        return accountNumber;
+    }
 
+    public double getBalance() {
+        return balance;
+    }
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public String getCustomerEmail() {
+        return customerEmail;
+    }
+
+    public String getCustomerPhoneNumber() {
+        return customerPhoneNumber;
+    }
 }
