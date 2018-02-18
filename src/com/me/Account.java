@@ -4,7 +4,7 @@ package com.me;
 public class Account {
 
     //Step 2 create fields for the account number, balance, customer name, email, & phone number
-    private int accountNumber;
+    private String accountNumber;
     private double balance;
     private String customerName;
     private String customerEmail;
@@ -14,6 +14,16 @@ public class Account {
     public Account(String accountNumber, double balance, String customerName, String customerEmail,
                    String customerPhoneNumber) {
 
+     //Step 4 make this. to reference fields above
+     this.accountNumber = accountNumber;
+     this.balance = balance;
+     this.customerName = customerName;
+     this.customerEmail = customerEmail;
+     this.customerPhoneNumber = customerPhoneNumber;
+
     }
+
+    //Step 5 create getter methods for this. fields
+
 
 }
