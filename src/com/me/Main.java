@@ -19,6 +19,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Step 6 use constructors to build instances
+        Account jimjonesAccount = new Account("2222", 5000.00, "Jim Jones",
+                "jim@email.com","440-876-1299");
+        Account peggysueAccount = new Account("4444", 8000.00, "Peggy Sue",
+                "peggy@email.com", "330-512-9034");
+        Account nickbellaAccount = new Account("6666", 4000.00, "Nick Bella",
+                "nick@email.com", "216-901-2471");
+
     }
 
 }
