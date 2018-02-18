@@ -30,13 +30,14 @@ public class Main {
 
         //Step 7
         //jim
+        System.out.println("----------------------------------");
         System.out.println("Account Number ID: " + jimjonesAccount.getAccountNumber());
         System.out.println("Checkings Account Balance: $" + jimjonesAccount.getCheckingsBalance());
         System.out.println("Savings Account Balance: $" + jimjonesAccount.getSavingsBalance());
         System.out.println("Account Name: " + jimjonesAccount.getCustomerName());
         System.out.println("Account Email Address: " + jimjonesAccount.getCustomerEmail());
         System.out.println("Account Phone Number: " + jimjonesAccount.getCustomerPhoneNumber());
-        System.out.println();
+        System.out.println("----------------------------------");
 
         //peggy
         System.out.println("Account Number ID " + peggysueAccount.getAccountNumber());
@@ -45,7 +46,7 @@ public class Main {
         System.out.println("Account Name: " + peggysueAccount.getCustomerName());
         System.out.println("Account Email Address: " + peggysueAccount.getCustomerEmail());
         System.out.println("Account Phone Number: " + peggysueAccount.getCustomerPhoneNumber());
-        System.out.println();
+        System.out.println("----------------------------------");
 
         //nick
         System.out.println("Account NUmber ID " + nickbellaAccount.getAccountNumber());
@@ -54,29 +55,32 @@ public class Main {
         System.out.println("Account Name: " + nickbellaAccount.getCustomerName());
         System.out.println("Account Email Address: " + nickbellaAccount.getCustomerEmail());
         System.out.println("Account Phone Number: " + nickbellaAccount.getCustomerPhoneNumber());
+        System.out.println("----------------------------------");
 
     }
 }
 
 /*results for accounts through printouts
+----------------------------------
 Account Number ID: 2222
 Checkings Account Balance: $5700.12
 Savings Account Balance: $28789.45
 Account Name: Jim Jones
 Account Email Address: jim@email.com
 Account Phone Number: 440-876-1299
-
+----------------------------------
 Account Number ID 4444
 Checkings Account Balance: $8671.19
 Savings Account Balance: $10234.78
 Account Name: Peggy Sue
 Account Email Address: pegleg@email.com
 Account Phone Number: 330-412-2190
-
+----------------------------------
 Account NUmber ID 6666
 Checkings Account Balance: $4603.09
 Savings Account Balance: $15760.37
 Account Name: Nick Bella
 Account Email Address: nicnac@email.com
 Account Phone Number: 216-901-2471
+----------------------------------
 */
