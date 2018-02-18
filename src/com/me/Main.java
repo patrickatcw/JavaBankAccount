@@ -57,3 +57,26 @@ public class Main {
 
     }
 }
+
+/*results for accounts through printouts
+Account Number ID: 2222
+Checkings Account Balance: $5700.12
+Savings Account Balance: $28789.45
+Account Name: Jim Jones
+Account Email Address: jim@email.com
+Account Phone Number: 440-876-1299
+
+Account Number ID 4444
+Checkings Account Balance: $8671.19
+Savings Account Balance: $10234.78
+Account Name: Peggy Sue
+Account Email Address: pegleg@email.com
+Account Phone Number: 330-412-2190
+
+Account NUmber ID 6666
+Checkings Account Balance: $4603.09
+Savings Account Balance: $15760.37
+Account Name: Nick Bella
+Account Email Address: nicnac@email.com
+Account Phone Number: 216-901-2471
+*/
