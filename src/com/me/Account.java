@@ -41,7 +41,7 @@ public class Account {
         } else {
             this.checkingsBalance -= withdrawalAmountCheckings;
             System.out.println("Withdrawal of $" + withdrawalAmountCheckings + " processed from " +
-                    this.customerName + "'s checkings account. Remaining balance = $" + this.checkingsBalance + ".");
+                    this.customerName + "'s checkings account. Remaining balance is $" + this.checkingsBalance + ".");
         }
     }
 
@@ -61,7 +61,7 @@ public class Account {
         } else {
             this.savingsBalance -= withdrawalAmountSavings;
             System.out.println("Withdrawal of $" + withdrawalAmountSavings + " processed from " +
-                    this.customerName + "'s savings account. Remaining balance = $" + this.savingsBalance + ".");
+                    this.customerName + "'s savings account. Remaining balance is $" + this.savingsBalance + ".");
         }
 
     }
@@ -82,7 +82,7 @@ public class Account {
         } else {
             this.savingsBalance -= withdrawalAmountSavings;
             System.out.println("Withdrawal of $" + withdrawalAmountSavings + " processed." +
-                    "Remaining balance = $" + this.savingsBalance + ".");
+                    "Remaining balance is $" + this.savingsBalance + ".");
         }
 
     }
@@ -103,7 +103,7 @@ public class Account {
         } else {
             this.savingsBalance -= withdrawalAmountSavings;
             System.out.println("Withdrawal of $" + withdrawalAmountSavings + " processed." +
-                    "Remaining balance = $" + this.savingsBalance + ".");
+                    "Remaining balance is $" + this.savingsBalance + ".");
         }
 
     }
