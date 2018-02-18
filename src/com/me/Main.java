@@ -27,6 +27,29 @@ public class Main {
         Account nickbellaAccount = new Account("6666", 4000.00, "Nick Bella",
                 "nick@email.com", "216-901-2471");
 
-    }
+        //Step 7
+        //jim
+        System.out.println("Account Number ID: " + jimjonesAccount.getAccountNumber());
+        System.out.println(jimjonesAccount.getBalance());
+        System.out.println(jimjonesAccount.getCustomerName());
+        System.out.println(jimjonesAccount.getCustomerEmail());
+        System.out.println(jimjonesAccount.getCustomerPhoneNumber());
+        System.out.println();
 
+        //peggy
+        System.out.println(peggysueAccount.getAccountNumber());
+        System.out.println(peggysueAccount.getBalance());
+        System.out.println(peggysueAccount.getCustomerName());
+        System.out.println(peggysueAccount.getCustomerEmail());
+        System.out.println(peggysueAccount.getCustomerPhoneNumber());
+        System.out.println();
+
+        //nick
+        System.out.println(nickbellaAccount.getAccountNumber());
+        System.out.println(nickbellaAccount.getBalance());
+        System.out.println(nickbellaAccount.getCustomerName());
+        System.out.println(nickbellaAccount.getCustomerEmail());
+        System.out.println(nickbellaAccount.getCustomerPhoneNumber());
+
+    }
 }
