@@ -13,11 +13,11 @@ the balance field, but not allow the withdrawal to complete if there are insuffi
 - third method to transfer funds between accounts
 ***need to update accounts involved in transactions
 ***need to varify account balances to determine if actions can be done, if not display message
-* and ask for another action
 9) create various code in the Main class to confirm your code is working
 10) add some println's in the 2 methods above as well*/
 
 package com.me;
+
 
 public class Main {
 
@@ -25,7 +25,7 @@ public class Main {
 
         //Step 6 use constructors to build instances
         Account jimjonesAccount = new Account("JJ2222", 5_700.12, 28_789.45,
-                "Jim Jones", "jim@email.com","440-876-1299");
+                "Jim Jones", "jim@email.com", "440-876-1299");
         Account peggysueAccount = new Account("PS4444", 8_671.19, 10_234.78,
                 "Peggy Sue", "pegleg@email.com", "330-412-2190");
         Account nickbellaAccount = new Account("NB5555", 4_603.09, 15_760.37,
@@ -71,50 +71,52 @@ public class Main {
         System.out.println("Account Phone Number: " + sallywheelerAccount.getCustomerPhoneNumber());
         System.out.println("--------------------------------------------");
 
-        System.out.println("What type of transaction would you like to conduct?");
-        System.out.println("(Deposit, Withdrawal, or Transfer)"); //create logic to accept answer
-        System.out.println("You chose XXXXX, is that correct?");    //create logic to replicate answer
-        System.out.println("(Yes or No)");   //create logic here to proceed with program
-        System.out.println("How much would you like to XXXXX?"); //depending on transaction
+        jimjonesAccount.depositCheckings(100.00);
+
+        System.out.println("--------------------------------------------");
+        System.out.println("Account Number ID: " + jimjonesAccount.getAccountNumber());
+        System.out.println("Checkings Account Balance: $" + jimjonesAccount.getCheckingsBalance());
+        System.out.println("Savings Account Balance: $" + jimjonesAccount.getSavingsBalance());
+        System.out.println("Account Name: " + jimjonesAccount.getCustomerName());
+        System.out.println("Account Email Address: " + jimjonesAccount.getCustomerEmail());
+        System.out.println("Account Phone Number: " + jimjonesAccount.getCustomerPhoneNumber());
+        System.out.println("--------------------------------------------");
+
+        jimjonesAccount.withdrawalCheckings(50.00);
+
+        System.out.println("--------------------------------------------");
+        System.out.println("Account Number ID: " + jimjonesAccount.getAccountNumber());
+        System.out.println("Checkings Account Balance: $" + jimjonesAccount.getCheckingsBalance());
+        System.out.println("Savings Account Balance: $" + jimjonesAccount.getSavingsBalance());
+        System.out.println("Account Name: " + jimjonesAccount.getCustomerName());
+        System.out.println("Account Email Address: " + jimjonesAccount.getCustomerEmail());
+        System.out.println("Account Phone Number: " + jimjonesAccount.getCustomerPhoneNumber());
+        System.out.println("--------------------------------------------");
+
+        sallywheelerAccount.withdrawalSavings(100.00);
+
+        System.out.println("--------------------------------------------");
+        System.out.println("Account NUmber ID: " + sallywheelerAccount.getAccountNumber());
+        System.out.println("Checkings Account Balance: $" + sallywheelerAccount.getCheckingsBalance());
+        System.out.println("Savings Account Balance: $" + sallywheelerAccount.getSavingsBalance());
+        System.out.println("Account Name: " + sallywheelerAccount.getCustomerName());
+        System.out.println("Account Email Address: " + sallywheelerAccount.getCustomerEmail());
+        System.out.println("Account Phone Number: " + sallywheelerAccount.getCustomerPhoneNumber());
+        System.out.println("--------------------------------------------");
+
+        sallywheelerAccount.withdrawalCheckings(230.00);
+
+        System.out.println("--------------------------------------------");
+        System.out.println("Account NUmber ID: " + sallywheelerAccount.getAccountNumber());
+        System.out.println("Checkings Account Balance: $" + sallywheelerAccount.getCheckingsBalance());
+        System.out.println("Savings Account Balance: $" + sallywheelerAccount.getSavingsBalance());
+        System.out.println("Account Name: " + sallywheelerAccount.getCustomerName());
+        System.out.println("Account Email Address: " + sallywheelerAccount.getCustomerEmail());
+        System.out.println("Account Phone Number: " + sallywheelerAccount.getCustomerPhoneNumber());
         System.out.println("--------------------------------------------");
 
     }
 }
 
 /*
---------------------------------------------
-Account Number ID: JJ2222
-Checkings Account Balance: $5700.12
-Savings Account Balance: $28789.45
-Account Name: Jim Jones
-Account Email Address: jim@email.com
-Account Phone Number: 440-876-1299
---------------------------------------------
-Account Number ID: PS4444
-Checkings Account Balance: $8671.19
-Savings Account Balance: $10234.78
-Account Name: Peggy Sue
-Account Email Address: pegleg@email.com
-Account Phone Number: 330-412-2190
---------------------------------------------
-Account NUmber ID: NB5555
-Checkings Account Balance: $4603.09
-Savings Account Balance: $15760.37
-Account Name: Nick Bella
-Account Email Address: nicnac@email.com
-Account Phone Number: 216-901-2471
---------------------------------------------
-Account NUmber ID: SW7777
-Checkings Account Balance: $12507.81
-Savings Account Balance: $32009.51
-Account Name: Sally Wheeler
-Account Email Address: swheels@email.com
-Account Phone Number: 440-746-0001
---------------------------------------------
-What type of transaction would you like to conduct?
-(Deposit, Withdrawal, or Transfer)
-You chose XXXXX, is that correct?
-(Yes or No)
-How much would you like to XXXXX?
---------------------------------------------
-*/
+ */
