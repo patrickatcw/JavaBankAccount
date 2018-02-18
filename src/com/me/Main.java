@@ -118,5 +118,71 @@ public class Main {
     }
 }
 
-/*
+/*current printout;
+--------------------------------------------
+Account Number ID: JJ2222
+Checkings Account Balance: $5700.12
+Savings Account Balance: $28789.45
+Account Name: Jim Jones
+Account Email Address: jim@email.com
+Account Phone Number: 440-876-1299
+--------------------------------------------
+Account Number ID: PS4444
+Checkings Account Balance: $8671.19
+Savings Account Balance: $10234.78
+Account Name: Peggy Sue
+Account Email Address: pegleg@email.com
+Account Phone Number: 330-412-2190
+--------------------------------------------
+Account NUmber ID: NB5555
+Checkings Account Balance: $4603.09
+Savings Account Balance: $15760.37
+Account Name: Nick Bella
+Account Email Address: nicnac@email.com
+Account Phone Number: 216-901-2471
+--------------------------------------------
+Account NUmber ID: SW7777
+Checkings Account Balance: $12507.81
+Savings Account Balance: $32009.51
+Account Name: Sally Wheeler
+Account Email Address: swheels@email.com
+Account Phone Number: 440-746-0001
+--------------------------------------------
+Deposit of $100.0 processed to Jim Jones's checkings account. New balance is $5800.12.
+--------------------------------------------
+Account Number ID: JJ2222
+Checkings Account Balance: $5800.12
+Savings Account Balance: $28789.45
+Account Name: Jim Jones
+Account Email Address: jim@email.com
+Account Phone Number: 440-876-1299
+--------------------------------------------
+Withdrawal of $50.0 processed from Jim Jones's checkings account. Remaining balance is $5750.12.
+--------------------------------------------
+Account Number ID: JJ2222
+Checkings Account Balance: $5750.12
+Savings Account Balance: $28789.45
+Account Name: Jim Jones
+Account Email Address: jim@email.com
+Account Phone Number: 440-876-1299
+--------------------------------------------
+Withdrawal of $100.0 processed from Sally Wheeler's savings account. Remaining balance is $31909.51.
+--------------------------------------------
+Account NUmber ID: SW7777
+Checkings Account Balance: $12507.81
+Savings Account Balance: $31909.51
+Account Name: Sally Wheeler
+Account Email Address: swheels@email.com
+Account Phone Number: 440-746-0001
+--------------------------------------------
+Withdrawal of $230.0 processed from Sally Wheeler's checkings account. Remaining balance is $12277.81.
+--------------------------------------------
+Account NUmber ID: SW7777
+Checkings Account Balance: $12277.81
+Savings Account Balance: $31909.51
+Account Name: Sally Wheeler
+Account Email Address: swheels@email.com
+Account Phone Number: 440-746-0001
+--------------------------------------------
+
  */
