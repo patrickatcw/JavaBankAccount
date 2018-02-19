@@ -31,6 +31,7 @@ public class Account {
         System.out.println("Deposit of $" + depositAmountCheckings + " processed to " + this.customerName +
                 "'s checkings account. New balance is $"
                 + this.checkingsBalance + ".");
+
     }
 
     //Step 9 withdrawal checkings
@@ -79,7 +80,7 @@ public class Account {
             System.out.println("Deposit of $" + depositAmountCheckings + " processed to " + this.customerName +
                     "'s checkings account. New balance is $"
                     + this.checkingsBalance + ".");
-            }
+        }
 
     }
 
@@ -99,6 +100,19 @@ public class Account {
         }
 
     }
+
+    //step 15 transfer money from one individual checking or savings account to a different individuals checking
+    //or savings account
+   /* public void transferFromTo(String customerName) {
+        if (this.checkingsBalance - withdrawalAmountCheckings < 0) {
+            System.out.println("Only $" + this.checkingsBalance + " available. Withdrawal " +
+                    "not processed.");
+        } else {
+            this.checkingsBalance -= withdrawalAmountCheckings;
+            System.out.println("Withdrawal of $" + withdrawalAmountCheckings + " processed from " +
+                    this.customerName + "'s checkings account. Remaining balance is $" + this.checkingsBalance + ".");
+        }
+    }*/
 
     //Step 5 create getter methods for this. fields
     //use Code>Generate>Getter, etc. in Menu above
