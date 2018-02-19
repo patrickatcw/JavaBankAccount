@@ -115,6 +115,17 @@ public class Main {
         System.out.println("Account Phone Number: " + sallywheelerAccount.getCustomerPhoneNumber());
         System.out.println("--------------------------------------------");
 
+        nickbellaAccount.transferFromSavings(100,100);
+
+        System.out.println("--------------------------------------------");
+        System.out.println("Account NUmber ID: " + nickbellaAccount.getAccountNumber());
+        System.out.println("Checkings Account Balance: $" + nickbellaAccount.getCheckingsBalance());
+        System.out.println("Savings Account Balance: $" + nickbellaAccount.getSavingsBalance());
+        System.out.println("Account Name: " + nickbellaAccount.getCustomerName());
+        System.out.println("Account Email Address: " + nickbellaAccount.getCustomerEmail());
+        System.out.println("Account Phone Number: " + nickbellaAccount.getCustomerPhoneNumber());
+        System.out.println("--------------------------------------------");
+
     }
 }
 

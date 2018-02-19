@@ -66,45 +66,54 @@ public class Account {
 
     }
 
-    //Step 12 transfer from savings                     //work on this
-    public void transferFromSavings(double depositAmountSavings) {
-        this.savingsBalance += depositAmountSavings;
-        System.out.println("Transfer of $" + depositAmountSavings + " made to " + this.customerName +
-                "'s savings account. New balance is $"
-                + this.savingsBalance + ".");
-    }
-
-    //Step 13 transfer to savings                       //work on this
-    public void transferToSavings(double withdrawalAmountSavings) {
+    //Step 12 transfer from savings to checkings
+    public void transferFromSavings(double withdrawalAmountSavings, double depositAmountCheckings) {
         if (this.savingsBalance - withdrawalAmountSavings < 0) {
-            System.out.println("Only $" + this.savingsBalance + " available. Withdrawal " +
-                    "not processed.");
+            System.out.println("Only $" + this.savingsBalance + " available. Transfer cannot be " +
+                    "processed.");
         } else {
             this.savingsBalance -= withdrawalAmountSavings;
-            System.out.println("Withdrawal of $" + withdrawalAmountSavings + " processed." +
-                    "Remaining balance is $" + this.savingsBalance + ".");
-        }
+            System.out.println("Withdrawal of $" + withdrawalAmountSavings + " processed from " +
+                    this.customerName + "'s savings account. Remaining balance is $" + this.savingsBalance + ".");
+            /*this.savingsBalance += depositAmountSavings;
+            System.out.println("Deposit of $" + depositAmountSavings + " processed to " + this.customerName +
+                    "'s savings account. New balance is $"
+                    + this.savingsBalance + ".");*/
+            this.checkingsBalance += depositAmountCheckings;
+            System.out.println("Deposit of $" + depositAmountCheckings + " processed to " + this.customerName +
+                    "'s checkings account. New balance is $"
+                    + this.checkingsBalance + ".");
 
     }
 
-    //Step 14 transfer from checkings                       //work on this
-    public void transferFromCheckings(double depositAmountSavings) {
-        this.savingsBalance += depositAmountSavings;
-        System.out.println("Deposit of $" + depositAmountSavings + " made to " + this.customerName +
-                "'s savings account. New balance is $"
-                + this.savingsBalance + ".");
+    //Step 13 transfer to savings or checkings                      //work on this
+   // public void transferToSavings(double depositAmountSavings){
+            //this.savingsBalance += depositAmountSavings;
+            //System.out.println("Deposit of $" + depositAmountSavings + " processed to " + this.customerName +
+                    //"'s savings account. New balance is $"
+                    //+ this.savingsBalance + ".");
+       // }
+
     }
 
-    //Step 15 transfer from savings                     //work on this
-    public void transferToCheckings(double withdrawalAmountSavings) {
-        if (this.savingsBalance - withdrawalAmountSavings < 0) {
-            System.out.println("Only $" + this.savingsBalance + " available. Withdrawal " +
+    //Step 14 transfer from checkings to savings                    //work on this
+    public void transferFromCheckings(double withdrawalAmountCheckings) {
+        if (this.checkingsBalance - withdrawalAmountCheckings < 0) {
+            System.out.println("Only $" + this.checkingsBalance + " available. Withdrawal " +
                     "not processed.");
         } else {
-            this.savingsBalance -= withdrawalAmountSavings;
-            System.out.println("Withdrawal of $" + withdrawalAmountSavings + " processed." +
-                    "Remaining balance is $" + this.savingsBalance + ".");
-        }
+            this.checkingsBalance -= withdrawalAmountCheckings;
+            System.out.println("Withdrawal of $" + withdrawalAmountCheckings + " processed from " +
+                    this.customerName + "'s checkings account. Remaining balance is $" + this.checkingsBalance + ".");
+    }
+
+    //Step 15 transfer to checkings                     //work on this
+    //public void transferToCheckings(double depositAmountCheckings) {
+            //this.checkingsBalance += depositAmountCheckings;
+            //System.out.println("Deposit of $" + depositAmountCheckings + " processed to " + this.customerName +
+                   // "'s checkings account. New balance is $"
+                    //+ this.checkingsBalance + ".");
+        //}
 
     }
 
